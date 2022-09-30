@@ -1,0 +1,185 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+.container {}
+
+.container-navbar {
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+
+}
+
+.ul-navbar{
+display: flex;
+height: 100px;
+justify-content: center;
+align-items: center;
+
+}
+
+.li-navbar{
+font-size: 15px;
+list-style-type: none;
+
+margin: 40px;
+}
+
+.wrap {
+    width: max-content;
+    
+}
+
+.typing{
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid black;
+    padding-right: 5px;
+    animation: typing 1s steps(20) infinite alternate, blink 0.7s infinite;
+}
+@keyframes typing{
+    0%{
+        width: 0%;
+        visibility: hidden;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    }
+    100%{
+        border-color: black;
+    }
+}
+
+.li-navbar:hover{
+    background-color: tomato;
+    transition: .3s ease-in-out;
+    transition-delay: .2s;
+    border-radius: 2px;
+}
+
+.a-navbar{
+    color: white;
+    text-decoration: none;
+
+}
+
+.container-content {
+    background-color: white;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    height: 80vh;
+    text margin-top: 50px;
+    
+    
+}
+
+.img-content {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.img-cv{
+    width: 20%;
+    height: 35%;
+    margin-bottom: 300px;
+    padding: 50px;
+ 
+}
+
+.container-footer{
+height: 10vh;
+background-color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+}
+
+.h1-footer{
+    font-size: 20px;
+
+}
+
+.text-center{
+    text-align: left;
+    margin-bottom: 300px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.tombol{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: #f1f1f1;
+    margin: 50px;
+    border-radius: 30%;
+    box-sizing: 0 5px 15px -5 #00000070;
+    overflow: hidden;
+    position: relative;
+    color: #2980b9;
+}
+
+.tombol i{
+    transition: 0.2 linear;
+    font-size: 26px;
+    line-height: 90px;
+ }
+
+ .tombol:hover i{
+   transform: scale(1.3); 
+   color: #f1f1f1;
+ }
+
+ .tombol::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: -110px;
+    top: 90%;
+    transform: rotate(45deg);
+    background: #3498db;
+}
+
+.tombol:hover::before{
+    left: -10%;
+    top: -10%;
+    animation:  aaa 0.7s 1;
+}
+@keyframes aaa{
+    0%{
+        left: -110%;
+        top: 90%;
+      }
+    50%{
+        left: -10%;
+        top: -30%;
+     }
+    100%{
+        left: -10%;
+        top: -10%;
+    }
+}
